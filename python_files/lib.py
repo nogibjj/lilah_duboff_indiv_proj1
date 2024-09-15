@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 def load_dataset(path):
     """Takes a string URL path to a csv file, loads it into the script for analysis, and returns a dataframe"""
     try:
-        data = pd.read_cvs(path)
+        data = pd.read_csv(path)
         return data
     except FileNotFoundError:
         print(f"File {path} not found")

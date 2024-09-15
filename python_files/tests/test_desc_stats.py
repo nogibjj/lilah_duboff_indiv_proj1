@@ -1,4 +1,4 @@
-from lilah_duboff_indiv_proj1.python_files.desc_stats import product
+from lilah_duboff_indiv_proj1.python_files.desc_stats_main import product
 
 
 def test_product():

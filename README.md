@@ -60,14 +60,13 @@
 ---
 ###### The following table is the desc_stats.py/jupyter output, indicating the count, mean, std, min, quartiles, and max for the numeric variables
 
-<< insert plot >>
 
 ---
 ### Visualizations
 ---
 ###### The following graph is a visualization created by the script, which displays a comparison of the number of driving fatalities per year reported in the dataset
 
-<< insert visualization >>
+![alt text](outputs/output.png)
 
 
 
