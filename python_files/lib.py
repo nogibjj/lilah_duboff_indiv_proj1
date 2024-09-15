@@ -14,91 +14,35 @@ def load_dataset(path):
     except FileNotFoundError:
         print(f"File {path} not found")
         return None
-    # except Exception as error:
-    #     print(f"Error while loading CSV File: {str(error)}")
-    #     return None
+    except Exception as error:
+        print(f"Error while loading CSV File: {str(error)}")
+        return None
 
 
 def full_describe(driving_df):
     """function that sets a new df variable equal to the summary stats"""
-    return driving_df.describe()
-
-
-def summary_statistics(dataframe):
-    """Takes the DataFrame and calls the describe function on it
-    Args:
-        DataFrame
-    Returns:
-        DataFrame containing summary statistics"""
-    summary = dataframe.describe()
-    markdown_output = summary.to_markdown()
-    return markdown_output
+    summary_stats = driving_df.describe()
+    stats_markdown = summary_stats.to_markdown()
+    return stats_markdown
 
 
 
-
-
-
-
-
-
-
-def build_chart():
+def build_bar_chart(driving_df):
     """builds a histogram out of the target columns"""
     plt.bar(driving_df["year"], driving_df["fatal"])
     # plt.hist(driving_df["year"], driving_df['fatal'], color="blue", edgecolor="white")
     plt.xlabel("Year")
     plt.ylabel("Number of Fatalities")
-    plt.title("Number of Fatalities by Year")
-    plt.savefig("outputs/output.png")
+    plt.title("Number of Car Crash Fatalities by Year")
     plt.show()
 
 
-build_chart()
+def build_scatterplot():
+    """builds a scatterplot out of the target columns"""
 
+def save_plot(file_name, driving_df):
+    build_bar_chart(driving_df).savefig(
+        "./outputs/" + f"barchart_{file_name}.png"
+    )
 
 # ProfileReport(final data frame passed as parameter)
-
-
-
-# import sys
-
-# def plot_visualize(dataframe):
-#     auto_df = dataframe
-#     """A test of data visualization for a given data set"""
-#     weight = auto_df["weight"]
-#     mpg = auto_df["mpg"]
-
-#     fig, ax = plt.subplots()
-#     ax.scatter(weight, mpg)
-#     ax.set_xlabel("Vehicle Weight")
-#     ax.set_ylabel("MPG")
-#     ax.set_title("Scatter Plot of Vehicle Weight vs MPG by car origin")
-#     return fig
-
-
-# def save_plot(file_name, datafram):
-#     plot_visualize(datafram).savefig(
-#         "pythonproject/figures/" + f"scatter_plot_{file_name}.png"
-#     )
-
-
-
-# def df_min(dataframe, column_name):
-#     """Takes a dataframe and returns the minimum value of the dataframe
-#     Args:
-#         dataframe
-#     Returns:
-#         minimum value of the dataframe"""
-#     min = dataframe[column_name].min()
-#     return min
-
-
-# def df_max(dataframe, column_name):
-#     """Takes a dataframe and returns the maximum value of the dataframe
-#     Args:
-#         dataframe
-#     Returns:
-#         maximum value of the dataframe"""
-#     max = dataframe[column_name].max()
-#     return max
