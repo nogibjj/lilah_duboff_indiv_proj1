@@ -21,7 +21,7 @@ jobs:
       - name: install packages and dependencies
         run: |
             make install
-      - name: test with pytest
+      - name: test
         run: |
           make test
       - name: check
