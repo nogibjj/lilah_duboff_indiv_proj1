@@ -24,7 +24,7 @@ def full_describe(driving_df):
     """function that sets a new df variable equal to the summary stats"""
     summary_stats = driving_df.describe()
     stats_markdown = summary_stats.to_markdown()
-    return stats_markdown
+    return summary_stats
 
 
 def build_bar_chart(driving_df, is_jupyter):
@@ -35,10 +35,12 @@ def build_bar_chart(driving_df, is_jupyter):
     plt.ylabel("Number of Fatalities")
     plt.title("Number of Car Crash Fatalities by Year")
     plt.show()
-    if not is_jupyter:
-        plt.savefig("driving_fatalities.png")
-    else:
-        plt.show()
+    if is_jupyter == True:
+        plt.savefig("./driving_fatalities.png")
+    elif is_jupyter == False:
+        plt.savefig("./outputs/output.png")     
+        
+        
 
 
 def build_scatterplot():
@@ -46,5 +48,4 @@ def build_scatterplot():
     # can be used to build scatterplots
 
 
-def save_plot(file_name, driving_df):
-    build_bar_chart(driving_df).savefig("./outputs/" + f"barchart_{file_name}.png")
+

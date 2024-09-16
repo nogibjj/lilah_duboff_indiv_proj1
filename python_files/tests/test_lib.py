@@ -9,7 +9,6 @@ from lib import (
     load_dataset,
     full_describe,
     build_bar_chart,
-    save_plot
 )
 
 test_path = "./data/us_driving_fatalities.csv"
@@ -27,16 +26,13 @@ def test_full_describe():
 
 
 def test_build_bar_chart():
-    result = build_bar_chart(test_df)
-    # assert result is None
+    result = build_bar_chart(test_df, False)
+    assert result is None
 
-def test_save_plot():
-    result = save_plot(test_df)
-    # assert result is None
 
 
 if __name__ == "__main__":
     test_load_dataset()
     test_full_describe()
     test_build_bar_chart()
-    test_save_plot()
+  
