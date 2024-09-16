@@ -19,7 +19,7 @@ def main():
     if driving_df is not None:
         lib.full_describe(driving_df)
 
-        lib.build_bar_chart(driving_df)
+        lib.build_bar_chart(driving_df, False)
         lib.save_plot(driving_df)
 
     profile = ProfileReport(driving_df)

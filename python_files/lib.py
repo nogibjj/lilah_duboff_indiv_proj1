@@ -27,14 +27,18 @@ def full_describe(driving_df):
     return stats_markdown
 
 
-def build_bar_chart(driving_df):
+def build_bar_chart(driving_df, is_jupyter):
     """builds a histogram out of the target columns"""
+
     plt.bar(driving_df["year"], driving_df["fatal"])
     plt.xlabel("Year")
     plt.ylabel("Number of Fatalities")
     plt.title("Number of Car Crash Fatalities by Year")
     plt.show()
-    
+    if not is_jupyter:
+        plt.savefig("congress_age.png")
+    else:
+        plt.show()
 
 
 def build_scatterplot():
