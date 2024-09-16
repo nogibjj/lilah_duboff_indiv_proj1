@@ -13,7 +13,7 @@ test:
 	python -m pytest -vv --nbval ./python_files/tests/test_*.py ./python_files/*.ipynb
 
 check:
-	python desc_stats_main.py
+	python ./python_files/desc_stats_main.py
 	git config --local user.email "action@github.com"; \
 	git config --local user.name "Github Action"; \
 	git add .; \
