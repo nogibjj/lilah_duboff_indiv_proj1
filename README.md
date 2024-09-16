@@ -28,7 +28,8 @@
 ---
 ### Project Video 
 ------------
-<insert video link>
+##### Please click the link below to check out a demo video/project walkthrough!
+https://youtu.be/B-4DL442OH4 
 
 ---
 ### Workflow Summary and Explanation
