@@ -1,3 +1,11 @@
+[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/format.yml)
+
+[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/install.yml)
+
+[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/lint.yml)
+
+[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml)
+
 # **Individual Project 1: Pandas Descriptive Statistics**
 ##### The goal of this project is to utilize pandas to create summary statistics and visualizations for a data set
 #### Requirements:

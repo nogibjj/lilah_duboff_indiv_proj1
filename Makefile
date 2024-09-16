@@ -7,13 +7,10 @@ format:
 	black ./python_files
 
 lint:
-# pylint ./python_files/desc_stats_main.py
 	ruff check ./python_files/*.py  ./python_files/*.ipynb 
-# ruff ./*.py
 	
 test:
-# python -m pytest /python_files/tests/test_desc_stats.py
-	python -m pytest test_*.py *.ipynb
+	python -m pytest -vv --nbval ./python_files/tests/test_*.py ./python_files/*.ipynb
 
 check:
 	python desc_stats_main.py
