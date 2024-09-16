@@ -52,16 +52,19 @@
         - Dockerfile
     - .github
         - workflows
-            - main.yml
-            - OTHER YAMLS
+            - format.yml
+            - install.yml
+            - lint.yml
+            - test.yml
     - data
         - us_driving_fatalities.csv
     - python files
         - tests
-            - test_desc_stats.py
+            - test_desc_stats_main.py
             - test_lib.py
-        - desc_stats.py
+        - desc_stats_main.py
         - lib.py
+    - driving summary.md (generated)
     - Makefile
     - README.md
     - requirements.txt
