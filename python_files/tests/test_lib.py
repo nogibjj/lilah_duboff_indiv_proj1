@@ -4,6 +4,7 @@ Testing the library file functions
 """
 import io
 import sys
+
 sys.path.append("python_files")
 
 from lib import (
@@ -22,11 +23,14 @@ mock_csv_data = """
 5,al,1986,1081
 """
 test_path = io.StringIO(mock_csv_data)
+
+
 def test_load_dataset():
     """test that loading the CSV will work"""
     result = load_dataset(test_path)
     assert result is not None
-    assert result.shape == (5, 4) 
+    assert result.shape == (5, 4)
+
 
 def test_full_describe():
     test_path = io.StringIO(mock_csv_data)
@@ -35,6 +39,7 @@ def test_full_describe():
     result = full_describe(test_df)
     assert result is not None
 
+
 def test_build_bar_chart():
     test_path = io.StringIO(mock_csv_data)
     test_df = load_dataset(test_path)
@@ -42,8 +47,8 @@ def test_build_bar_chart():
     result = build_bar_chart(test_df, False)
     assert result is None
 
+
 if __name__ == "__main__":
     test_load_dataset()
     test_full_describe()
     test_build_bar_chart()
-
