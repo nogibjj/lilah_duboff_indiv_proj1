@@ -6,6 +6,8 @@
 
 [![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml)
 
+![alt text](<Screenshot 2024-09-16 at 1.07.30 AM.png>)
+
 # **Individual Project 1: Pandas Descriptive Statistics**
 ##### The goal of this project is to utilize pandas to create summary statistics and visualizations for a data set
 #### Requirements:
