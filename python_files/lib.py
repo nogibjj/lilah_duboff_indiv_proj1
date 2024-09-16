@@ -36,7 +36,7 @@ def build_bar_chart(driving_df, is_jupyter):
     plt.title("Number of Car Crash Fatalities by Year")
     plt.show()
     if not is_jupyter:
-        plt.savefig("congress_age.png")
+        plt.savefig("driving_fatalities.png")
     else:
         plt.show()
 
