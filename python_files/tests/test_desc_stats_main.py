@@ -5,17 +5,13 @@ import pandas as pd
 import sys
 
 sys.path.append("python_files")
-from desc_stats_main import save_as_markdown
+from desc_stats_main import main
 
 
-test_csv = pd.read_csv("./data/us_driving_fatalities.csv")
-
-
-def test_save_as_markdown():
-    """Tests that the csv can be converted to markdown"""
-    result = save_as_markdown()
+def test_main():
+    result = main()
     assert result is None
 
 
 if __name__ == "__main__":
-    test_save_as_markdown()
+    test_main()    

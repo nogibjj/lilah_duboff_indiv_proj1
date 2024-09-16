@@ -74,7 +74,7 @@
 ---
 ###### The following graph is a visualization created by the script, which displays a comparison of the number of driving fatalities per year reported in the dataset
 
-![alt text](outputs/output.png)
+![alt text](python_files/outputs/output.png)
 
 
 

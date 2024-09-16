@@ -1,13 +1,5 @@
 """Takes a csv file, reads it, and creates graphs"""
-
-from ydata_profiling import ProfileReport
 import lib
-
-
-def save_as_markdown():
-    """Takes the output and writes it to an html file"""
-    with open("file name", "a") as file:
-        file.write("name")
 
 
 def main():

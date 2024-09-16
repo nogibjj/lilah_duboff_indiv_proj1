@@ -24,7 +24,13 @@ def full_describe(driving_df):
     """function that sets a new df variable equal to the summary stats"""
     summary_stats = driving_df.describe()
     stats_markdown = summary_stats.to_markdown()
-    return summary_stats
+    with open("driving_summary.md", "w", encoding="utf-8") as file:
+        file.write("Describe:\n")
+        file.write(stats_markdown)
+        file.write("\n\n")  
+        file.write("![driving_fatalities](python_files/outputs/driving_fatalities.png)\n")
+        
+    return stats_markdown
 
 
 def build_bar_chart(driving_df, is_jupyter):
@@ -34,11 +40,12 @@ def build_bar_chart(driving_df, is_jupyter):
     plt.xlabel("Year")
     plt.ylabel("Number of Fatalities")
     plt.title("Number of Car Crash Fatalities by Year")
-    plt.show()
+    
     if is_jupyter == True:
-        plt.savefig("./driving_fatalities.png")
-    elif is_jupyter == False:
-        plt.savefig("./outputs/output.png")     
+        plt.savefig("./outputs/driving_fatalities.png")
+    if is_jupyter == False:
+        plt.savefig("python_files/outputs/output.png")   
+        plt.show()  
         
         
 
