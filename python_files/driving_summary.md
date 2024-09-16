@@ -10,4 +10,4 @@ Describe:
 | 75%   | 1987       | 1063.5   |
 | max   | 1988       | 5504     |
 
-![driving_fatalities](python_files/outputs/driving_fatalities.png)
+![driving_fatalities](outputs/driving_fatalities.png)
