@@ -27,9 +27,11 @@ def full_describe(driving_df):
     with open("driving_summary.md", "w", encoding="utf-8") as file:
         file.write("Describe:\n")
         file.write(stats_markdown)
-        file.write("\n\n")  
-        file.write("![driving_fatalities](python_files/outputs/driving_fatalities.png)\n")
-        
+        file.write("\n\n")
+        file.write(
+            "![driving_fatalities](python_files/outputs/driving_fatalities.png)\n"
+        )
+
     return stats_markdown
 
 
@@ -40,19 +42,14 @@ def build_bar_chart(driving_df, is_jupyter):
     plt.xlabel("Year")
     plt.ylabel("Number of Fatalities")
     plt.title("Number of Car Crash Fatalities by Year")
-    
-    if is_jupyter == True:
+
+    if is_jupyter is True:
         plt.savefig("./outputs/driving_fatalities.png")
-    if is_jupyter == False:
-        plt.savefig("python_files/outputs/output.png")   
-        plt.show()  
-        
-        
+    if is_jupyter is False:
+        plt.savefig("python_files/outputs/output.png")
+        plt.show()
 
 
 def build_scatterplot():
     """builds a scatterplot out of the target columns"""
     # can be used to build scatterplots
-
-
-
