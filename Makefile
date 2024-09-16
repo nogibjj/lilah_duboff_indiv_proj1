@@ -1,33 +1,29 @@
-python_files_var = desc_stats_main.py test_desc_stats.py
-notebook_files_var = *.ipynb
-
-.PHONY: install test format lint
 
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
 format:
-	black *.py
+	black ./python_files
 
 lint:
-	pylint /python_files/desc_stats.py
-	ruff $(python_files_var)
-
+# pylint ./python_files/desc_stats_main.py
+	ruff check ./python_files/*.py  ./python_files/*.ipynb 
+# ruff ./*.py
+	
 test:
-	python pytest /python_files/tests/test_desc_stats.py
-	jupyter nbconvert --to notebook --execute $(notebook_files_var) --inplace
+# python -m pytest /python_files/tests/test_desc_stats.py
+	python -m pytest test_*.py *.ipynb
 
 check:
 	python desc_stats_main.py
 	git config --local user.email "action@github.com"; \
 	git config --local user.name "Github Action"; \
-	git add .
-	git commit -m "test"
-	git push
+	git add .; \
+	git commit -m "test"; \
+	git push; \
 
-all: install lint test
+deploy:
+	#deploy goes here
 
-
-	
-
+all: install lint format test 
