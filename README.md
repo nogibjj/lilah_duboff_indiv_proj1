@@ -30,8 +30,8 @@
 ------------
 <insert video link>
 
-### Workflow Summary and Explanation
 ---
+### Workflow Summary and Explanation
 ##### This project contains the following dependencies:
 - pylint 
 - black
