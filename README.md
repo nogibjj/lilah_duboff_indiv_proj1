@@ -1,10 +1,10 @@
-[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/format.yml)
+[![Format](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/format.yml)
 
-[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/install.yml)
+[![Install](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/install.yml)
 
-[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/lint.yml)
+[![Lint](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/lint.yml)
 
-[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml)
+[![Test](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_indiv_proj1/actions/workflows/test.yml)
 
 ![alt text](<Screenshot 2024-09-16 at 1.07.30 AM.png>)
 
